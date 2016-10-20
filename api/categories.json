@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "title": "CPU",
+      "slug": "cpu",
+      "image": "http://pc.local/images/nav-cpu.png"
+    },
+    {
+      "title": "CPU Cooler",
+      "slug": "cpu_cooler",
+      "image": "http://pc.local/images/nav-cpucooler.png"
+    },
+    {
+      "title": "Motherboard",
+      "slug": "motherboard",
+      "image": "http://pc.local/images/nav-motherboard.png"
+    },
+    {
+      "title": "Memory",
+      "slug": "memory",
+      "image": "http://pc.local/images/nav-memory.png"
+    },
+    {
+      "title": "Video Card",
+      "slug": "video_card",
+      "image": "http://pc.local/images/nav-videocard.png"
+    },
+    {
+      "title": "Storage",
+      "slug": "storage",
+      "image": "http://pc.local/images/nav-ssd.png"
+    },
+    {
+      "title": "Power",
+      "slug": "power",
+      "image": "http://pc.local/images/nav-powersupply.png"
+    },
+    {
+      "title": "Case",
+      "slug": "case",
+      "image": "http://pc.local/images/nav-case.png"
+    }
+  ]
+}

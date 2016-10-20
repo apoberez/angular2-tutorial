@@ -1,0 +1,19 @@
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="pc-header">
+        <a routerLink="/" class="logo">pc-logo</a>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <div class="container">
+      <a class="menu-item" (click)="onClickMenuItem()">
+        Catalog <span class="glyphicon glyphicon-menu-down"></span>
+      </a>
+    </div>
+  </nav>
+  <div class="drop-show" [@dropState]="dropState">
+    <pc-catalog></pc-catalog>
+  </div>
+</header>

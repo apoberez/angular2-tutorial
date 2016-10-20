@@ -1,0 +1,27 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 primary">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 category" *ngFor="let category of categories">
+              <a routerLink="categories/{{category.slug}}">
+                <figure class="category-logo">
+                  <img src="{{category.image}}" title="{{category.title}}"
+                       alt="{{category.title}}">
+                  <figcaption>{{category.title}}</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div>
+          <a routerLink="categories/cpu">test</a>
+          <a routerLink="/">test</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+:host {
+    display: block;
+    color: #fff;
+}
+
+:host .primary .row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+:host .category {
+    box-sizing: border-box;
+    padding: 0 20px 10px 0;
+}
+
+:host .category a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    border: 1px solid #B0BEC5;
+    padding: 10px 0;
+    background: #546E7A;
+}
+
+:host .category a:hover {
+    background: #455A64;
+    color: #B0BEC5;
+    border-color: #CFD8DC;
+}
+
+:host .category-logo {
+}
+
+:host .category-logo img {
+    max-width: 100px;
+}
