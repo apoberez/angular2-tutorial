@@ -1,8 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {Router} from "@angular/router";
-
+import {Component, OnInit} from "@angular/core";
 import {Category} from "../../../catalog/model/category";
-import {CatalogService} from "../../../catalog/catalog.service";
+import {CategoryService} from "../../../catalog/category.service";
 
 @Component({
     selector: 'pc-catalog',
@@ -13,7 +11,7 @@ export class CatalogComponent implements OnInit {
 
     public categories: Category[];
 
-    constructor(private catalogService: CatalogService, private router: Router) {
+    constructor(private categoryService: CategoryService) {
     }
 
     ngOnInit(): void {
@@ -21,7 +19,7 @@ export class CatalogComponent implements OnInit {
     }
 
     getCategories() {
-        this.catalogService.getCategories().subscribe(
+        this.categoryService.findAll().subscribe(
             categories => this.categories = categories,
             error => console.log(error)
         );

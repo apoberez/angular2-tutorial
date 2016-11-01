@@ -1,8 +1,10 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
-import {CatalogService} from "./catalog.service";
-import {CatalogPageComponent} from "./catalog-page-component/catalog-page.component";
+
+import {CategoryService} from "./category.service";
 import {CatalogRoutingModule} from "./catalog-routing.module";
+import {CategoryPageComponent} from "./category-page-component/category-page.component";
+import {CategoryPageResolve} from "./category-page-component/category-page-resolve.service";
 
 @NgModule({
     imports: [
@@ -10,13 +12,14 @@ import {CatalogRoutingModule} from "./catalog-routing.module";
         CatalogRoutingModule
     ],
     declarations: [
-        CatalogPageComponent
+        CategoryPageComponent
     ],
     providers: [
-        CatalogService
+        CategoryService,
+        CategoryPageResolve
     ],
     exports: [
-        CatalogPageComponent
+        CategoryPageComponent
     ]
 })
 export class CatalogModule {

@@ -23,15 +23,24 @@ module.exports = webpackMerge(commonConfig, {
         proxy: {
             '/api': {
                 target:  {
-                    "host": "pc.local",
+                    "host": "localhost",
                     "protocol": 'http:',
-                    "port": 80
+                    "port": 9000
                 },
                 changeOrigin: true,
                 secure: false,
                 pathRewrite: {
                     '^/api': ''
                 }
+            },
+            '/static': {
+                target:  {
+                    "host": "localhost",
+                    "protocol": 'http:',
+                    "port": 9000
+                },
+                changeOrigin: true,
+                secure: false
             }
         }
     }

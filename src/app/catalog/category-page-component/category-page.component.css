@@ -1,0 +1,15 @@
+:host .title {
+    background: #4E5EA6;
+}
+
+:host .title h1 {
+    color: white;
+    padding: 20px 0;
+    line-height: 40px;
+    margin: 0;
+    font-size: 32px;
+}
+
+:host .content {
+    min-height: 280px;
+}

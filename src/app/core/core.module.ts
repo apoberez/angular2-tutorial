@@ -4,6 +4,7 @@ import {CatalogModule} from "../catalog/catalog.module";
 import {HeaderComponent} from "./components/header/header.component";
 import {CatalogComponent} from "./components/catalog/catalog.component";
 import {RouterModule} from "@angular/router";
+import {FooterComponent} from "./components/footer/footer.component";
 
 @NgModule({
     imports: [
@@ -12,10 +13,12 @@ import {RouterModule} from "@angular/router";
         RouterModule.forChild([])
     ],
     exports: [
-        HeaderComponent
+        HeaderComponent,
+        FooterComponent
     ],
     declarations: [
         HeaderComponent,
+        FooterComponent,
         CatalogComponent
     ]
 })

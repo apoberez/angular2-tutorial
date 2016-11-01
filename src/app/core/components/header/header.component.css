@@ -1,3 +1,7 @@
+:host {
+    display: block;
+}
+
 :host .header-top {
     z-index: 10;
     position: relative;
@@ -18,7 +22,7 @@
     width: 222px;
     height: 48px;
     text-indent: -9999em;
-    background: url(./pcpp.png) no-repeat;
+    background: url(../assets/pcpp.png) no-repeat;
     background-size: 222px 48px;
     margin: 0;
 }
@@ -54,6 +58,7 @@
 
 :host nav .menu-item:hover {
     background: #78909C;
+    cursor: pointer;
 }
 
 :host .drop-show {

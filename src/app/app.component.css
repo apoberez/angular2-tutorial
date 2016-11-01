@@ -1,8 +1,18 @@
 main {
-  padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  display: block;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    display: block;
 }
 
+:host {
+    display: block;
+    position: relative;
+    height: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+}
+
+:host .page-content {
+}
