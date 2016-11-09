@@ -1,0 +1,42 @@
+:host{
+    box-shadow: -500px 0 0 0 #ededed, inset 50px 0 0 0 #ededed;
+}
+
+:host .page-columns {
+    overflow: hidden;
+    width: 100%;
+    display: table;
+    box-shadow: -500px 0 0 0 #ededed;
+}
+
+:host .page-columns h2 {
+    font-size: 22px;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+:host .column-right, :host .column-left {
+    display: table-cell;
+    padding: 48px 0;
+    vertical-align: top;
+}
+
+:host .column-left {
+    width: 250px;
+    min-width: 193px;
+    padding-right: 52px;
+    background: #ededed;
+    border-right: 1px solid #e3e3e3;
+    box-shadow: -999px 0 0 0 #EAE7E7;
+}
+
+:host .column-right {
+    min-width: 500px;
+    padding-left: 52px;
+}
+
+:host .column-right article {
+    min-height: 280px;
+}

@@ -3,8 +3,10 @@ import {CommonModule} from "@angular/common";
 
 import {CategoryService} from "./category.service";
 import {CatalogRoutingModule} from "./catalog-routing.module";
-import {CategoryPageComponent} from "./category-page-component/category-page.component";
-import {CategoryPageResolve} from "./category-page-component/category-page-resolve.service";
+import {CategoryPageComponent} from "./component/category-page/category-page.component";
+import {CategoryPageResolve} from "./component/category-page/category-page-resolve.service";
+import {ProductGridComponent} from "./component/product-grid/product-grid.component";
+import {ProductListComponent} from "./component/product-list/product-list.component";
 
 @NgModule({
     imports: [
@@ -12,7 +14,9 @@ import {CategoryPageResolve} from "./category-page-component/category-page-resol
         CatalogRoutingModule
     ],
     declarations: [
-        CategoryPageComponent
+        CategoryPageComponent,
+        ProductGridComponent,
+        ProductListComponent
     ],
     providers: [
         CategoryService,

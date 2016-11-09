@@ -3,8 +3,9 @@ import {Injectable} from "@angular/core";
 
 import {Observable} from "rxjs";
 
-import {Category} from "../model/category";
-import {CategoryService} from "../category.service";
+import {Category} from "../../model/category";
+import {CategoryService} from "../../category.service";
+import {CategoryPage} from "../../model/category.page";
 
 @Injectable()
 export class CategoryPageResolve implements Resolve<Category> {
@@ -12,9 +13,8 @@ export class CategoryPageResolve implements Resolve<Category> {
     constructor(private cs: CategoryService) {
     }
 
-    resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Category>|boolean {
+    resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<CategoryPage> {
         let slug = route.params["slug"];
-        // todo not found case
-        return this.cs.findBySlug(slug);
+        return this.cs.getPageData(slug);
     }
 }

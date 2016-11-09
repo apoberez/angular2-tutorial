@@ -1,0 +1,16 @@
+<table class="table table-stripped">
+  <thead>
+  <tr>
+    <th>CPU</th>
+    <th>cores</th>
+    <th>rating</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{product.title}}</td>
+      <td>{{product.specification.get("cores")}}</td>
+      <td>{{product.specification.get("rating")}}</td>
+    </tr>
+  </tbody>
+</table>

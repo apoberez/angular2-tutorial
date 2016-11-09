@@ -1,8 +1,8 @@
 import {NgModule} from "@angular/core";
 import {RouterModule} from "@angular/router";
 
-import {CategoryPageComponent} from "./category-page-component/category-page.component";
-import {CategoryPageResolve} from "./category-page-component/category-page-resolve.service";
+import {CategoryPageComponent} from "./component/category-page/category-page.component";
+import {CategoryPageResolve} from "./component/category-page/category-page-resolve.service";
 
 @NgModule({
     imports: [
@@ -11,7 +11,7 @@ import {CategoryPageResolve} from "./category-page-component/category-page-resol
                 path: 'categories/:slug',
                 component: CategoryPageComponent,
                 resolve: {
-                    category: CategoryPageResolve
+                    categoryPageData: CategoryPageResolve
                 }
             }
         ])

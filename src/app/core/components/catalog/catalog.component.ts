@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, Output, EventEmitter} from "@angular/core";
 import {Category} from "../../../catalog/model/category";
 import {CategoryService} from "../../../catalog/category.service";
 
@@ -10,6 +10,8 @@ import {CategoryService} from "../../../catalog/category.service";
 export class CatalogComponent implements OnInit {
 
     public categories: Category[];
+
+    @Output() onClickMenuItem = new EventEmitter<void>();
 
     constructor(private categoryService: CategoryService) {
     }
@@ -23,5 +25,9 @@ export class CatalogComponent implements OnInit {
             categories => this.categories = categories,
             error => console.log(error)
         );
+    }
+
+    onChooseCategory() {
+        this.onClickMenuItem.emit();
     }
 }

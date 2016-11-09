@@ -12,7 +12,7 @@ import {Component, trigger, state, style, transition, animate, OnInit} from '@an
             state('active', style({
                 transform: 'translate(0, 0)'
             })),
-            transition('inactive <=> active', animate('300ms ease-in'))
+            transition('inactive <=> active', animate('250ms ease-in'))
         ])
     ]
 })
@@ -30,6 +30,5 @@ export class HeaderComponent implements OnInit {
         } else {
             this.dropState = 'inactive';
         }
-        console.log(this.dropState);
     }
 }
